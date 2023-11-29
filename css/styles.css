@@ -265,6 +265,7 @@ ul {
 
     .open-btn {
         display: block;
+        cursor: pointer;
     }
 
         nav {
@@ -281,8 +282,9 @@ ul {
         height: 100vh;
         padding: 10rem 1rem;
         transform: translate(150%);
-        transition: translate .5s ease-in-out;
+        transition: transform .5s ease-in-out;
         background: #fff;
+        box-shadow: -20rem 0 5px rgba(0, 0, 0, .4);
     }
 
     .mobile-nav > ul {
@@ -290,9 +292,10 @@ ul {
     }
 
     .close-btn {
+        cursor: pointer;
         position: absolute;
-        top: -30%;
-        right: 20%;
+        top: -40%;
+        right: 25%;
     }
 
     .mobile-nav > ul > li > a {
@@ -322,5 +325,7 @@ ul {
 @media (max-width: 400px) {
     .mobile-nav {
         box-shadow: -10rem 0 5px rgba(0, 0, 0, .4);
+        opacity: 100%;
+        transition: opacity .3s ease-in-out;
     }
 }
